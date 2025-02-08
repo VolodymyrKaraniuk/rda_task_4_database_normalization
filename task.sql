@@ -11,13 +11,13 @@ CREATE TABLE Countries (
 
 CREATE TABLE Products (
     ID INT,
-    Name VARCHAR(50),
+    ProductName VARCHAR(50),
     PRIMARY KEY (ID)
 );
 
 CREATE TABLE Warehouse (
     ID INT,
-    name varchar(50),
+    house varchar(50),
     city VARCHAR(50),
     street varchar(50),
     CountryID INT,
@@ -45,9 +45,9 @@ INSERT INTO Countries (ID,Name)
 INSERT INTO Products (ID,Name)
 	VALUES (1, 'AwersomeProduct');
 
-INSERT INTO Warehouse (ID,Name,city,street,CountryID)
+INSERT INTO Warehouse (ID,house,city,street,CountryID)
 	VALUES (1, 'Warehouse-1', 'City-1', 'Street-1',1);
-INSERT INTO Warehouse (ID,Name,city,street,CountryID)
+INSERT INTO Warehouse (ID,house,city,street,CountryID)
 	VALUES (2, 'Warehouse-2', 'City-2', 'Street-2',2);
 
 
